@@ -74,7 +74,7 @@ function App() {
     <Router>
     <Header/>
     <Switch>
-          <Route exact path="/" render={()=>{
+          <Route basename="/Todo-v2" exact path="/" render={()=>{
             return(
               <>
               <AddTodo addTodo={addTodo}/>
