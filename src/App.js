@@ -74,7 +74,7 @@ function App() {
     <Router>
     <Header/>
     <Switch>
-          <Route basename="/Todo-v2" exact path="/" render={()=>{
+          <Route basename="/Todo-v2" exact path={process.env.PUBLIC_URL + '/'} render={()=>{
             return(
               <>
               <AddTodo addTodo={addTodo}/>
